@@ -11,6 +11,8 @@ It is not finished!
 This is a Shopping Cart Application made to learn how TypeScript works 
 with React. Project is set with fake API from fakestoreapi.com by fetching data from it.
 
+App.tsx is main component of the application that contains funcions and all components from Cart, CartItem and Item components. That components includes type props that are exported to main App.tsx component.
+
 
 ## Setup
 ### how to start Shopping Cart App
@@ -42,4 +44,4 @@ npm i styled-components @types/styled-components - for TS
 ## This application is made with an online course
 - freeCodeCamp.org
 
-progress: 45:49
+progress: 57:08

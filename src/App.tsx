@@ -39,7 +39,23 @@ const App = () => {
   items.reduce((ack: number, item) => ack + item.amount, 0); //add amount to total amount
   //accumulator gives initial value of 0 and add amount of each item
 
-  const handleAddToCart = (clickedItem: CartItemType) => null;
+  const handleAddToCart = (clickedItem: CartItemType) => {
+    setCartItems(prev => {
+       // 1. Is the item already added in the cart?
+       // It is tocheck if the item i clicked exist in the cart by comparing these two id's, look throught the stuffs and it returns true or false when find something
+       const isItemInCart = prev.find(item => item.id === clickedItem.id);
+
+       if (isItemInCart) {
+         return prev.map(item => (
+           item.id === clickedItem.id
+           ? { ...item, amount: item.amount + 1}
+           : item
+         ));
+       }
+       // First time the item is added
+       return [...prev, { ...clickedItem, amount: 1}];
+    });
+  };
 
   const handleRemoveFromCart = () => null;
 
