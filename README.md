@@ -14,6 +14,7 @@ App.tsx is main component of the application that contains funcions and all comp
 You can add the product you want to the cart, in the cart tab are selected products. 
 In the cart tab you can increase products number or delete them.
 
+![This is how site looks like](./public/readme-image.jpg)
 
 ## Setup
 ### how to start Shopping Cart App
