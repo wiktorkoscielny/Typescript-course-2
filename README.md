@@ -44,5 +44,4 @@ npm i styled-components @types/styled-components - for TS
 
 ### This application is made with an online course
 - freeCodeCamp.org
-
-progress: 57:08
+- yt viedo: https://youtu.be/sfmL6bGbiN8
