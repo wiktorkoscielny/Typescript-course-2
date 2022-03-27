@@ -6,12 +6,13 @@
 * [Setup](#setup)
 
 ## General Info
-It is not finished!
-
 This is a Shopping Cart Application made to learn how TypeScript works 
 with React. Project is set with fake API from fakestoreapi.com by fetching data from it.
 
 App.tsx is main component of the application that contains funcions and all components from Cart, CartItem and Item components. That components includes type props that are exported to main App.tsx component.
+
+You can add the product you want to the cart, in the cart tab are selected products. 
+In the cart tab you can increase products number or delete them.
 
 
 ## Setup
