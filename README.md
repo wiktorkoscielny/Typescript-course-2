@@ -41,7 +41,7 @@ npm i styled-components @types/styled-components - for TS
 ```
 
 
-## This application is made with an online course
+### This application is made with an online course
 - freeCodeCamp.org
 
 progress: 57:08

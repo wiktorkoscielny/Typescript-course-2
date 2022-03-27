@@ -56,8 +56,27 @@ const App = () => {
        return [...prev, { ...clickedItem, amount: 1}];
     });
   };
-
-  const handleRemoveFromCart = () => null;
+  
+// * HANDLE REMOVE FROM cART FUNCTION
+// set the cart item, previous state called reduce, 
+// ack that starts with an empty array and specified as CartItemType array,
+// check if the item.id is equal to the id is sending as argument, 
+// when id is equal to 1 the ack is returning
+// and skip this item and deleted from array otherwise it returns a new array where i spred out ack
+// then i have a new object when the items are spreated out and remove 1 from amount
+// otherwise i return the item at it is
+  const handleRemoveFromCart = (id: number) => {
+    setCartItems(prev => 
+      prev.reduce((ack, item) => {
+        if (item.id === id) {
+          if (item.amount === 1) return ack;
+          return [...ack, { ...item, amount: item.amount -1}];
+        } else {
+          return [...ack, item];
+        }
+      }, [] as CartItemType[])
+      );
+  };
 
   if (isLoading) return <LinearProgress />;
   if (error) return <div>Something went wrong...</div>
